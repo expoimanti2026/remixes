@@ -13,6 +13,7 @@ const qrContainer = document.getElementById("codigoQR");
 
 const alumno = document.getElementById("alumno");
 const cancion = document.getElementById("cancion");
+const grupo = document.getElementById("grupo");
 
 const btnAnterior = document.getElementById("btnAnterior");
 const btnSiguiente = document.getElementById("btnSiguiente");
@@ -51,7 +52,8 @@ function mostrarProyecto() {
 
     alumno.textContent = proyecto.alumno;
     cancion.textContent = proyecto.cancion;
-
+    grupo.textContent = proyecto.grupo;
+    
     actual.textContent = indiceActual + 1;
 
     // Limpiar QR anterior
