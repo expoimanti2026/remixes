@@ -1,0 +1,457 @@
+/* =====================================================
+   RESET
+===================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,
+body{
+    width:100%;
+    height:100%;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#171a21;
+
+    color:#ffffff;
+
+    display:flex;
+
+    flex-direction:column;
+
+    overflow:hidden;
+
+}
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+header{
+
+    min-height:80px;
+
+    background:#202530;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 30px;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.35);
+
+    z-index:100;
+
+}
+
+header h1{
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+/* =====================================================
+   BOTONES HEADER
+===================================================== */
+
+.accionesHeader{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.selectorProyecto{
+
+    position:relative;
+
+}
+
+#btnProyecto,
+#btnRandom{
+
+    background:#4a8df8;
+
+    color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+    padding:12px 18px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    transition:.25s;
+
+}
+
+#btnProyecto:hover,
+#btnRandom:hover{
+
+    background:#66a1ff;
+
+}
+
+/* =====================================================
+   MENÚ
+===================================================== */
+
+#menuProyecto{
+
+    position:absolute;
+
+    right:0;
+
+    top:58px;
+
+    width:330px;
+
+    background:#2b313d;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.45);
+
+}
+
+.oculto{
+
+    display:none;
+
+}
+
+#buscarAlumno{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    outline:none;
+
+    background:#1f232b;
+
+    color:white;
+
+    font-size:15px;
+
+}
+
+#buscarAlumno::placeholder{
+
+    color:#aaa;
+
+}
+
+#listaProyectos{
+
+    max-height:450px;
+
+    overflow-y:auto;
+
+}
+
+.item{
+
+    padding:14px 18px;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+    border-bottom:1px solid rgba(255,255,255,.05);
+
+}
+
+.item:hover{
+
+    background:#4a8df8;
+
+}
+
+/* =====================================================
+   MAIN
+===================================================== */
+
+main{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:30px;
+
+}
+
+/* =====================================================
+   QR
+===================================================== */
+
+.contenedorQR{
+
+    background:#202530;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:25px;
+
+}
+
+#codigoQR{
+
+    width:420px;
+
+    height:420px;
+
+    background:white;
+
+    padding:15px;
+
+    border-radius:16px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+#codigoQR:hover{
+
+    transform:scale(1.03);
+
+    box-shadow:0 0 30px rgba(74,141,248,.4);
+
+}
+
+#codigoQR img{
+
+    width:100% !important;
+
+    height:100% !important;
+
+}
+
+.contenedorQR p{
+
+    font-size:20px;
+
+    color:#d6d6d6;
+
+    text-align:center;
+
+    line-height:1.5;
+
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer{
+
+    height:110px;
+
+    background:#202530;
+
+    display:grid;
+
+    grid-template-columns:90px 1fr 90px;
+
+    align-items:center;
+
+    padding:0 30px;
+
+    box-shadow:0 -3px 10px rgba(0,0,0,.35);
+
+}
+
+.info{
+
+    text-align:center;
+
+}
+
+.info h2{
+
+    font-size:30px;
+
+}
+
+.info p{
+
+    margin-top:6px;
+
+    font-size:18px;
+
+    color:#cccccc;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+
+/* =====================================================
+   BOTONES
+===================================================== */
+
+.botonCircular{
+
+    width:62px;
+
+    height:62px;
+
+    border-radius:50%;
+
+    border:none;
+
+    background:#4a8df8;
+
+    color:white;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+.botonCircular:hover{
+
+    background:#66a1ff;
+
+    transform:scale(1.08);
+
+}
+
+.botonCircular:active{
+
+    transform:scale(.95);
+
+}
+
+/* =====================================================
+   SCROLLBAR
+===================================================== */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#1a1d23;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#555;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#777;
+
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:900px){
+
+    #codigoQR{
+
+        width:300px;
+
+        height:300px;
+
+    }
+
+    header h1{
+
+        font-size:22px;
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    footer{
+
+        grid-template-columns:70px 1fr 70px;
+
+    }
+
+    .info h2{
+
+        font-size:22px;
+
+    }
+
+    .info p{
+
+        font-size:15px;
+
+    }
+
+    #codigoQR{
+
+        width:240px;
+
+        height:240px;
+
+    }
+
+}
+

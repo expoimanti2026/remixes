@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Expo IMANTI 2026: Music Lab</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ========================= -->
+    <!-- HEADER -->
+    <!-- ========================= -->
+
+    <header>
+
+        <h1>Expo IMANTI 2026: Music Lab </h1>
+
+        <div class="accionesHeader">
+
+            <button id="btnRandom">
+
+                🎲
+
+            </button>
+
+            <div class="selectorProyecto">
+
+                <button id="btnProyecto">
+
+
+                    <span id="actual">1</span>
+
+                    de
+
+                    <span id="total">1</span>
+
+                    ▼
+
+                </button>
+
+                <div id="menuProyecto" class="oculto">
+
+                    <input
+                        type="text"
+                        id="buscarAlumno"
+                        placeholder="Buscar estudiante...">
+
+                    <div id="listaProyectos"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ========================= -->
+    <!-- CONTENIDO -->
+    <!-- ========================= -->
+
+    <main>
+
+        <div class="contenedorQR">
+
+            <!-- Aquí se genera automáticamente el QR -->
+            <div id="codigoQR"></div>
+
+            <p>
+
+                Escanea el código QR o haz clic sobre él para abrir el proyecto.
+
+            </p>
+
+        </div>
+
+    </main>
+
+
+    <!-- ========================= -->
+    <!-- FOOTER -->
+    <!-- ========================= -->
+
+    <footer>
+
+        <button
+            id="btnAnterior"
+            class="botonCircular">
+
+            &#10094;
+
+        </button>
+
+        <div class="info">
+
+            <h2 id="alumno">
+
+                Nombre del alumno
+
+            </h2>
+
+            <p id="cancion">
+
+                Nombre del remix
+
+            </p>
+
+        </div>
+
+        <button
+            id="btnSiguiente"
+            class="botonCircular">
+
+            &#10095;
+
+        </button>
+
+    </footer>
+
+
+    <!-- ========================= -->
+    <!-- LIBRERÍA QRCode.js -->
+    <!-- ========================= -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+    <!-- ========================= -->
+    <!-- DATOS -->
+    <!-- ========================= -->
+
+    <script src="projects.js"></script>
+
+    <!-- ========================= -->
+    <!-- APP -->
+    <!-- ========================= -->
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
