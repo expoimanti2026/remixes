@@ -558,15 +558,6 @@ footer{
 
     }
 
-    #btnProyecto,
-    #btnRandom{
-
-        font-size:14px;
-
-        padding:8px 12px;
-
-    }
-
 }
 
 @media(max-height:700px){
