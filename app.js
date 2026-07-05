@@ -288,3 +288,8 @@ document.addEventListener("keydown", (e) => {
     }
 
 });
+document.getElementById("tituloExpo").addEventListener("click", () => {
+
+    window.location.href = "https://expoimanti2026.github.io/karaoke/";
+
+});
