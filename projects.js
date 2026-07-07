@@ -100,5 +100,11 @@ const projects = [
     cancion: "Remix de Espresso (Sabrina Carpenter)",
     player: "https://studio.code.org/projects/music/50a36787-27ff-4c74-bc54-9224462a193f",
     grupo:"1ro A"
+},
+{
+    alumno: "Mateo Puga",
+    cancion: "Remix de I Need a Dollar (Aloe Blacc)",
+    player: "https://studio.code.org/projects/music/d4e0d9dd-c538-465c-9e60-7295af4038b1",
+    grupo:"1ro A"
 }
 ];
